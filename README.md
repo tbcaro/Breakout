@@ -1,3 +1,9 @@
 # CIS306Final
 
-So far I think our best option for using a repo is to wait until we have the framework for the game. Create the project locally, and then push it to git for everyone to clone. Then, we can start adding our own pieces, and pulling the code to our machines every time we develop. 
+This repo should be ready to clone and import into Eclipse...
+
+If you choose to copy project to workspace, make sure when you commit and git push you are pushing the version from the workspace and not the original which may not reflect the edits. 
+
+Also, as you'll learn from the tutorials be sure git pull everytime you begin to work to ensure you have the most up to date version of the project. 
+
+Happy Coding!
