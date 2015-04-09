@@ -7,6 +7,9 @@
  * 				should this object be drawn (boolean)
  * 				Collision Rectagle -- bounding rectangle for each image (Rectangle)
  */ 
+
+
+// IM TAKING OVER THE WORLD
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
