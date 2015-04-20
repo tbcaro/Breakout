@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class Block extends GameObject{
 
+	public static final int WIDTH = 0;
 	private Random generator;
 	
 	public Block()
