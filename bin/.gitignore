@@ -10,3 +10,6 @@
 /GamePanel.class
 /ScorePanel.class
 /webFrame.html
+/GameApplet$MyKeyListener.class
+/GameApplet$TimerListener.class
+/GameApplet.class
