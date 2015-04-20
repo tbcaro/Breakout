@@ -43,7 +43,7 @@ public class GameManager extends Applet implements Runnable{
 	
 	private Timer timer;
 	
-	private Player thePlayer;  //Player objects
+	private Paddle thePlayer;  //Player objects
 			
 	private Toolkit tk; //toolkit used to load images
 	private URL url;  //URL used to load images
@@ -52,6 +52,7 @@ public class GameManager extends Applet implements Runnable{
 	
 	
 	
+
 	@Override
 	public void init() {
 		// TODO Auto-generated method stub

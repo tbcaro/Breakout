@@ -1,35 +1,44 @@
-//Player object inherits directly from GameObject, not falling object
-
-//SDW was Here
+/**
+ * 		PADDLE CLASS
+ * 
+ * 	Has a private int for lives left for the player
+ * 			Move Left, Move Right methods	
+ * 					-Moves our collision rectangle as the player is moved across the screen
+ * Over loaded constructor used for the images
+ * 
+ * has getter/setter for the lives so Game Manager can interact with this when the ball is beyond the reach of the paddle object
+ * 
+ * @author Chris
+ * 
+ * 
+ */
 
 
 import java.awt.Image;
-import java.util.ArrayList;
-
-import javax.swing.JOptionPane;
 
 
-public class Player extends GameObject{
+public class Paddle extends GameObject{
 
-	private final int DEAD = 3;
-	private int numPlayerHits;
+	private int lives = 3;
+	
 
+	
 	//default no argument constructor
-	public Player()
+	public Paddle()
 	{
 		super();
 		xPos = 0;
 		yPos = GameManager.HEIGHT - 100;
-		numPlayerHits = 0;
+		
 	}
 	
 	//overloaded constructor
-	public Player(Image pImage)
+	public Paddle(Image pImage)
 	{
 		super (pImage);
 		xPos = 0;
 		yPos = GameManager.HEIGHT - 100;
-		numPlayerHits = 0;
+		
 	}
 	
 	//Called from the Game Manager when the player presses the left arrow key
@@ -51,22 +60,14 @@ public class Player extends GameObject{
 		this.getCollisionRect().height = getHeight();
 		this.getCollisionRect().width = this.getWidth();
 	}
-	
-	//Increase the number of times the player has been hit
-	public void increaseNumPlayerHits()
-	{
-		numPlayerHits++;
+		
+	public int getLives() {
+		return lives;
 	}
-	
-	//Check to see if the player is dead
-	public void checkPlayerDead()
-	{
-		if (numPlayerHits >=DEAD)
-		{
-			JOptionPane.showMessageDialog(null, "Game Over!");
-			System.exit(0);
-		}
+
+	public void setLives(int lives) {
+		this.lives = lives;
 	}
-	
+
 	
 }
