@@ -62,6 +62,7 @@ public class GameObject {
 
 
 	//Accessor and Mutator Methods
+	
 	public int getxPos() {
 		return xPos;
 	}

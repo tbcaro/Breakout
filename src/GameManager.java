@@ -26,7 +26,7 @@ public class GameManager extends Applet implements Runnable{
 	private Timer timer;
 	private final int NUM_FALLING_OBJECTS =4; 
 	
-	private Player thePlayer;  //Player objects
+	private Paddle thePlayer;  //Player objects
 			
 	private Toolkit tk; //toolkit used to load images
 	private URL url;  //URL used to load images
@@ -42,7 +42,7 @@ public class GameManager extends Applet implements Runnable{
 		
 		
 		//Instantiate a player and pass the image
-		thePlayer= new Player(tk.getImage(url));
+		thePlayer= new Paddle(tk.getImage(url));
 		//Instantiate an "enemy object" or arrays of falling objects
 		
 		
