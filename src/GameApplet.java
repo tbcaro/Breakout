@@ -32,7 +32,7 @@ import javax.swing.Timer;
  * 
  */
 
-public class GameManager extends Applet implements Runnable{
+public class GameApplet extends Applet implements Runnable{
 	
 	private final int WIDTH = 800;
 	private final int HEIGHT = 500;
@@ -49,22 +49,23 @@ public class GameManager extends Applet implements Runnable{
 	private URL url;  //URL used to load images
 	
 	private int score;  //Score of the game
-	
-	
-	
+		
 
 	@Override
 	public void init() {
 		// TODO Auto-generated method stub
 		super.init();
 		
-		
-		this.setLocation(200, 200);
 		this.setSize(WIDTH, HEIGHT);
-		this.setName("Final App");
-		this.setFocusable(true);
-		
 		this.setLayout(new BorderLayout());
+		
+		scorePanel = new ScorePanel();
+		gamePanel = new GamePanel();
+		controlPanel = new ControlPanel();
+		
+		this.add(scorePanel,BorderLayout.NORTH);
+		this.add(gamePanel, BorderLayout.CENTER);
+		this.add(controlPanel, BorderLayout.SOUTH);
 		
 		
 	}

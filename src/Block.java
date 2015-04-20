@@ -28,7 +28,7 @@ public class Block extends GameObject{
 	
 	public boolean offscreen()
 	{
-		if (yPos>GameManager.HEIGHT+100)
+		if (yPos>GameApplet.HEIGHT+100)
 		{
 			this.setShouldDraw(false);
 			return true;

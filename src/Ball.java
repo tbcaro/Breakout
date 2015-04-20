@@ -35,7 +35,7 @@ public class Ball extends GameObject{
 		{
 			super();
 			xPos = 0;
-			yPos = GameManager.HEIGHT - 100;
+			yPos = GameApplet.HEIGHT - 100;
 			ballColor = new Color(0,200,0);
 			
 			// Set a constant velocity of  1:3 to create a nice steep angle
@@ -50,7 +50,7 @@ public class Ball extends GameObject{
 		{
 			super (pImage);
 			xPos = 0;
-			yPos = GameManager.HEIGHT - 100;
+			yPos = GameApplet.HEIGHT - 100;
 			
 			// Set a constant velocity of  1:3 to create a nice steep angle
 			xVelocity = 1;
