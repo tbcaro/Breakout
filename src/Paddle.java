@@ -28,7 +28,8 @@ public class Paddle extends GameObject{
 	{
 		super();
 		xPos = 0;
-		yPos = GameApplet.HEIGHT - 100;
+
+		yPos = GamePanel.HEIGHT - 100;
 		
 	}
 	
@@ -37,7 +38,8 @@ public class Paddle extends GameObject{
 	{
 		super (pImage);
 		xPos = 0;
-		yPos = GameApplet.HEIGHT - 100;
+
+		yPos = GamePanel.HEIGHT - 100;
 		
 	}
 	

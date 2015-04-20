@@ -9,7 +9,7 @@
  * 
  * 
  * 
- * 
+ * @author Chris
  * 
  * 
  */
@@ -35,7 +35,9 @@ public class Ball extends GameObject{
 		{
 			super();
 			xPos = 0;
-			yPos = GameApplet.HEIGHT - 100;
+
+			yPos = GamePanel.HEIGHT - 100;
+			
 			ballColor = new Color(0,200,0);
 			
 			// Set a constant velocity of  1:3 to create a nice steep angle
@@ -50,7 +52,9 @@ public class Ball extends GameObject{
 		{
 			super (pImage);
 			xPos = 0;
-			yPos = GameApplet.HEIGHT - 100;
+
+			yPos = GamePanel.HEIGHT - 100;
+
 			
 			// Set a constant velocity of  1:3 to create a nice steep angle
 			xVelocity = 1;
@@ -84,6 +88,14 @@ public class Ball extends GameObject{
 			this.getCollisionRect().height = getHeight();
 			this.getCollisionRect().width = this.getWidth();
 			
+			xPos = xPos + xVelocity;
+			yPos = yPos + yVelocity;
+		}
+
+		// Check and see if the we crashed into a wall of the panel
+			// will look and see if it was on the top/bottom or left/right side
+				// manipulate the velocity for which one
+		private void wallCrash(){
 			if (getxPos()+ ballWidth>GamePanel.PANEL_WIDTH)
 			{
 				setxVelocity(-1* getxPos());
@@ -95,33 +107,41 @@ public class Ball extends GameObject{
 				setyVelocity(-1* getyPos());
 			}
 			
-			//If statement for block hits
-			
-			
-			// if statement for paddle hits
-			
-			
-
-			xPos = xPos + xVelocity;
-			yPos = yPos + yVelocity;
 		}
-
 
 		// Check and see if the we crashed into a block
 			// will look and see if it was on the x or y side
 				// manipulate the velocity for which one
-		public void blockCrash(){
+		private void blockCrash(){
 			
-			// Need to figure out how we are going to do this
+			if (getxPos()+ ballWidth > Block.WIDTH)
+			{
+				setxVelocity(-1* getxPos());
+			}
+			
+		
+			if(getyPos()+Ball.ballHeight >Block.HEIGHT)
+			{
+				setyVelocity(-1* getyPos());
+			}
 			
 		}
 		
 		// Check and see if we crashed into the paddle
 			// will look and see if it was on the x or y side
 				// manipulate the velocity for which one
-		public void paddleCrash(){
+		private void paddleCrash(){
 			
-			//need to figure out how to do this 
+			if (getxPos()+ ballWidth > Paddle.WIDTH)
+			{
+				setxVelocity(-1* getxPos());
+			}
+			
+		
+			if(getyPos()+Ball.ballHeight >Paddle.HEIGHT)
+			{
+				setyVelocity(-1* getyPos());
+			}
 			
 		}
 		
