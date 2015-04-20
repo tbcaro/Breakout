@@ -37,6 +37,10 @@ public class GameManager extends Applet implements Runnable{
 	private final int WIDTH = 800;
 	private final int HEIGHT = 500;
 	
+	private ScorePanel scorePanel;
+	private GamePanel gamePanel;
+	private ControlPanel controlPanel;
+	
 	private Timer timer;
 	
 	private Player thePlayer;  //Player objects
