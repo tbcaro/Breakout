@@ -6,3 +6,7 @@
 /player_normal.png
 /Paddle.class
 /Ball.class
+/ControlPanel.class
+/GamePanel.class
+/ScorePanel.class
+/webFrame.html
