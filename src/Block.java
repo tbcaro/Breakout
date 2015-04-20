@@ -3,17 +3,17 @@ import java.awt.Rectangle;
 import java.util.Random;
 
 
-public class Enemy extends GameObject{
+public class Block extends GameObject{
 
 	private Random generator;
 	
-	public Enemy()
+	public Block()
 	{
 		
 		
 	}
 	
-	public Enemy(Image pImage)
+	public Block(Image pImage)
 	{
 		
 		
@@ -28,7 +28,7 @@ public class Enemy extends GameObject{
 	
 	public boolean offscreen()
 	{
-		if (yPos>SimpleGame.HEIGHT+100)
+		if (yPos>GameManager.HEIGHT+100)
 		{
 			this.setShouldDraw(false);
 			return true;

@@ -1,3 +1,4 @@
+import java.applet.Applet;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -19,25 +20,19 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 
-//git test
 
-
-public class GameManager extends JPanel {
+public class GameManager extends Applet implements Runnable{
 	
 	private Timer timer;
 	private final int NUM_FALLING_OBJECTS =4; 
 	
 	private Player thePlayer;  //Player objects
-	
-	
-	
+			
 	private Toolkit tk; //toolkit used to load images
 	private URL url;  //URL used to load images
 	
-	
-	
-	
 	private int score;  //Score of the game
+	
 	
 	public GameManager()
 	{
@@ -134,24 +129,29 @@ public class GameManager extends JPanel {
 	}
 
 	private class MyKeyListener implements KeyListener{
-	@Override
-	public void keyPressed(KeyEvent e) {
-		
+		@Override
+		public void keyPressed(KeyEvent e) {
+			
+		}
+	
+	
+		@Override
+		public void keyReleased(KeyEvent arg0) {
+			// TODO Auto-generated method stub
+			
+		}
+	
+	
+		@Override
+		public void keyTyped(KeyEvent arg0) {
+			// TODO Auto-generated method stub
+			
+		}
 	}
-
-
-	@Override
-	public void keyReleased(KeyEvent arg0) {
-		// TODO Auto-generated method stub
+	
+	public void run()
+	{
 		
-	}
-
-
-	@Override
-	public void keyTyped(KeyEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
 	}
 
 

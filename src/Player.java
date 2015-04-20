@@ -19,7 +19,7 @@ public class Player extends GameObject{
 	{
 		super();
 		xPos = 0;
-		yPos = SimpleGame.HEIGHT - 100;
+		yPos = GameManager.HEIGHT - 100;
 		numPlayerHits = 0;
 	}
 	
@@ -28,7 +28,7 @@ public class Player extends GameObject{
 	{
 		super (pImage);
 		xPos = 0;
-		yPos = SimpleGame.HEIGHT - 100;
+		yPos = GameManager.HEIGHT - 100;
 		numPlayerHits = 0;
 	}
 	
