@@ -1,8 +1,10 @@
 import java.applet.Applet;
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -19,12 +21,23 @@ import java.util.Random;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-
+/*
+ * 
+ * Class: GameManager
+ * Author: Travis Caro (TBC)
+ * Purpose: 
+ * 		- Run as applet and manage the overall game
+ * 		
+ *		- Will need ScorePanel, GamePanel, ControlPanel
+ * 
+ */
 
 public class GameManager extends Applet implements Runnable{
 	
+	private final int WIDTH = 800;
+	private final int HEIGHT = 500;
+	
 	private Timer timer;
-	private final int NUM_FALLING_OBJECTS =4; 
 	
 	private Player thePlayer;  //Player objects
 			
@@ -34,31 +47,75 @@ public class GameManager extends Applet implements Runnable{
 	private int score;  //Score of the game
 	
 	
-	public GameManager()
-	{
-		tk = Toolkit.getDefaultToolkit();
 	
-		//Load the an image to represent the player 
+	@Override
+	public void init() {
+		// TODO Auto-generated method stub
+		super.init();
 		
 		
-		//Instantiate a player and pass the image
-		thePlayer= new Player(tk.getImage(url));
-		//Instantiate an "enemy object" or arrays of falling objects
-		
-		
-		//Instantiate timer
-
-
-		//Set focusable to be true so the user doesn't have to click on the screen
+		this.setLocation(200, 200);
+		this.setSize(WIDTH, HEIGHT);
+		this.setName("Final App");
 		this.setFocusable(true);
-		//Add the keyboard listener to the class
+		
+		this.setLayout(new BorderLayout());
 		
 		
-		this.setBackground(Color.BLACK);
-	
-		
-	
 	}
+	
+	
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		super.start();
+	}
+	
+	
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		super.stop();
+	}
+		
+	
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		super.destroy();
+	}
+	
+	@Override
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+		super.paint(g);
+	}
+	
+//	public GameManager()
+//	{
+//		tk = Toolkit.getDefaultToolkit();
+//	
+//		//Load the an image to represent the player 
+//		
+//		
+//		//Instantiate a player and pass the image
+//		thePlayer= new Player(tk.getImage(url));
+//		//Instantiate an "enemy object" or arrays of falling objects
+//		
+//		
+//		//Instantiate timer
+//
+//
+//		//Set focusable to be true so the user doesn't have to click on the screen
+//		this.setFocusable(true);
+//		//Add the keyboard listener to the class
+//		
+//		
+//		this.setBackground(Color.BLACK);
+//	
+//		
+//	
+//	}
 	
 	//Start the timer object
 	public void startTimer()
@@ -71,11 +128,7 @@ public class GameManager extends Applet implements Runnable{
 	
 	//Draw the background, all of the falling objects in the list
 	//and all of the bullets that are active in the list
-	public void paintComponent(Graphics g)
-	{
 	
-		
-	}
 	
 	
 	//Because this is only one thread, I needed the timer to run faster

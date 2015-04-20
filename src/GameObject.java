@@ -39,7 +39,7 @@ public class GameObject {
 		
 		objectPic = null;
 		xPos = -100;
-		yPos =-100;
+		yPos = -100;
 		width = 0;
 		height = 0;
 		shouldDraw = true;
