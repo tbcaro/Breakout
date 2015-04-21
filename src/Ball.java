@@ -167,14 +167,11 @@ public class Ball extends GameObject{
 
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
+		@Override
+		public void draw() {
+			// TODO Auto-generated method stub
+			
+		}
 	
 	
 	

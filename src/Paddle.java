@@ -25,6 +25,7 @@ public class Paddle extends GameObject{
 	private int lives = 3;
 	
 	
+	
 
 	
 	//default no argument constructor
