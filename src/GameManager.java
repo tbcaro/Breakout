@@ -37,25 +37,25 @@ public class GameManager extends JPanel {
 	
 	public GameManager()
 	{
-		tk = Toolkit.getDefaultToolkit();
-	
-		//Load the an image to represent the player 
-		
-		
-		//Instantiate a player and pass the image
-		thePlayer= new Paddle(tk.getImage(url));
-		//Instantiate an "enemy object" or arrays of falling objects
-		
-		
-		//Instantiate timer
-
-
-		//Set focusable to be true so the user doesn't have to click on the screen
-		this.setFocusable(true);
-		//Add the keyboard listener to the class
-		
-		
-		this.setBackground(Color.BLACK);
+//		tk = Toolkit.getDefaultToolkit();
+//	
+//		//Load the an image to represent the player 
+//		
+//		
+//		//Instantiate a player and pass the image
+//		thePlayer= new Paddle(tk.getImage(url));
+//		//Instantiate an "enemy object" or arrays of falling objects
+//		
+//		
+//		//Instantiate timer
+//
+//
+//		//Set focusable to be true so the user doesn't have to click on the screen
+//		this.setFocusable(true);
+//		//Add the keyboard listener to the class
+//		
+//		
+//		this.setBackground(Color.BLACK);
 	
 		
 	

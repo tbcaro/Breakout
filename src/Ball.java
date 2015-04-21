@@ -95,55 +95,55 @@ public class Ball extends GameObject{
 		// Check and see if the we crashed into a wall of the panel
 			// will look and see if it was on the top/bottom or left/right side
 				// manipulate the velocity for which one
-		private void wallCrash(){
-			if (getxPos()+ ballWidth>GamePanel.PANEL_WIDTH)
-			{
-				setxVelocity(-1* getxPos());
-			}
-			
-		
-			if(getyPos()+Ball.ballHeight >GamePanel.PANEL_HEIGHT)
-			{
-				setyVelocity(-1* getyPos());
-			}
-			
-		}
-
-		// Check and see if the we crashed into a block
-			// will look and see if it was on the x or y side
-				// manipulate the velocity for which one
-		private void blockCrash(){
-			
-			if (getxPos()+ ballWidth > Block.WIDTH)
-			{
-				setxVelocity(-1* getxPos());
-			}
-			
-		
-			if(getyPos()+Ball.ballHeight >Block.HEIGHT)
-			{
-				setyVelocity(-1* getyPos());
-			}
-			
-		}
+//		private void wallCrash(){
+//			if (getxPos()+ ballWidth>GamePanel.PANEL_WIDTH)
+//			{
+//				setxVelocity(-1* getxPos());
+//			}
+//			
+//		
+//			if(getyPos()+Ball.ballHeight >GamePanel.PANEL_HEIGHT)
+//			{
+//				setyVelocity(-1* getyPos());
+//			}
+//			
+//		}
+//
+//		// Check and see if the we crashed into a block
+//			// will look and see if it was on the x or y side
+//				// manipulate the velocity for which one
+//		private void blockCrash(){
+//			
+//			if (getxPos()+ ballWidth > Block.WIDTH)
+//			{
+//				setxVelocity(-1* getxPos());
+//			}
+//			
+//		
+//			if(getyPos()+Ball.ballHeight >Block.HEIGHT)
+//			{
+//				setyVelocity(-1* getyPos());
+//			}
+//			
+//		}
 		
 		// Check and see if we crashed into the paddle
 			// will look and see if it was on the x or y side
 				// manipulate the velocity for which one
-		private void paddleCrash(){
-			
-			if (getxPos()+ ballWidth > Paddle.WIDTH)
-			{
-				setxVelocity(-1* getxPos());
-			}
-			
-		
-			if(getyPos()+Ball.ballHeight >Paddle.HEIGHT)
-			{
-				setyVelocity(-1* getyPos());
-			}
-			
-		}
+//		private void paddleCrash(){
+//			
+//			if (getxPos()+ ballWidth > Paddle.WIDTH)
+//			{
+//				setxVelocity(-1* getxPos());
+//			}
+//			
+//		
+//			if(getyPos()+Ball.ballHeight >Paddle.HEIGHT)
+//			{
+//				setyVelocity(-1* getyPos());
+//			}
+//			
+//		}
 		
 		
 //Accessor and Mutator Methods
