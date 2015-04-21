@@ -19,7 +19,11 @@ import java.awt.Image;
 
 public class Paddle extends GameObject{
 
+	public final int WIDTH = 200;
+	public final int HEIGHT = 25;
+	
 	private int lives = 3;
+	
 	
 
 	
@@ -71,5 +75,11 @@ public class Paddle extends GameObject{
 		this.lives = lives;
 	}
 
+	
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

@@ -5,11 +5,15 @@ import java.util.Random;
 
 public class Block extends GameObject{
 
-	public static final int WIDTH = 0;
+	public final int WIDTH = 75;
+	public final int HEIGHT = 25;
+	
+	private int pointValue;
 	private Random generator;
 	
 	public Block()
 	{
+		pointValue = 10;
 		
 		
 	}
@@ -21,27 +25,16 @@ public class Block extends GameObject{
 		
 	}
 	
-	public void move()
-	{
-		
-		
-	}
-	
-	public boolean offscreen()
-	{
-		if (yPos>GameApplet.HEIGHT+100)
-		{
-			this.setShouldDraw(false);
-			return true;
-		}
-		return false;
-	}
 	
 	public int getPoints()
 	{
-		return 0;
+		return pointValue;
 	}
 	
+	public void draw()
+	{
+		
+	}
 	
 	
 }

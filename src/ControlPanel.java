@@ -6,19 +6,21 @@ import javax.swing.JPanel;
 
 public class ControlPanel extends JPanel {
 	
-	private JButton startButton;
-	private JButton exitButton;
+	protected JButton startButton;
+	protected JButton stopButton;
 	
 	public ControlPanel()
 	{		
 		this.setBackground(Color.GRAY);
 		
 		startButton = new JButton("Start");
-		exitButton = new JButton("Exit");
+		stopButton = new JButton("Exit");
 		
 		this.add(startButton);
-		this.add(exitButton);
+		this.add(stopButton);
 		
 	}
+	
+	
 
 }

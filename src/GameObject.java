@@ -21,7 +21,7 @@ import java.net.URL;
 import javax.imageio.ImageIO;
 
 
-public class GameObject {
+public abstract class GameObject {
 	protected int xPos;
 	protected int yPos; //x and y position of the object
 	private Image objectPic;  //the picture of the object
@@ -116,6 +116,8 @@ public class GameObject {
 	{
 		return collisionRect;
 	}
+	
+	abstract public void draw();
 	
 
 }
